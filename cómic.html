@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./cómic.css">
+  <title>Comic-Demeter</title>
+</head>
+
+<body>
+
+  <!-- Slideshow container -->
+  <div class="row">
+    <div class="col-12">
+      <div class="alerta" id="miAlerta">
+        <span class="cerrar" onclick="cerrarAlerta()">X</span>
+        <h2>¡Bienvenidos a nuestro cómic!</h2>
+        <h3>Esta es una guia del cómic.</h3>
+        <li> Para volver a ver el cómic debes de reiniciar la pagina</li>
+        <li> Este cómic es lineal, por tanto debes verlo hacia la derecha. Pulsando en las flechas que estan a los lados de cada escena</li>
+        <li> Para reproducir cada escena desbes de pulsar en los aros verdes</li>
+        <li> El boton de inicio sirve para regresar a la pagina web principal</li>
+        
+      </div>
+      <div class="slideshow-container">
+        <div class="barra">
+          <audio class="audiolab oculto">
+            <source src="Audio Labo..mp3" type="">
+          </audio>
+          <audio class="oculto" id="audio" src="Música  para contar historias 2.mp3" controls></audio>
+          <button class="button" id="toggleButton">Musica</button>
+          <div class="sonido"><a href="#audio"><img src="boton sonido.png" alt="" width="40%"></a></div>
+          <a href="./index.html" class="btn-inicio"><img src="boton inicio.png" alt="" width="30%"></a>
+          <a href="#alerta" onclick="mostrarAlerta()"><img class="alert" src="Boton ayuda.png" alt="" width="10%"></a>
+        </div>
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <p class="numbertext">1 / 5</p>
+          <p class="butoncapitulo">capitulo 1</p>
+          <div id="miElemento" class="mi-elemento">
+            <img class="lampara" src="lampara 3_Mesa de trabajo 1-03.png" alt="">
+          </div>
+          
+          <!-- onclick="toggleOpacidad()" -->
+          <img class="cambio" src="rayo.png" alt="">
+          <img class="boton botonrojo" onclick="toggleOpacidad()" src="boton1.png" alt="">
+          <img class="boton botonverde oculto" src="./imgs/boton2.png" onclick="toggleOpacidad2()" alt="">
+          <img class="laboratorio" src="FONDO-LABORATORIO.gif" style="width:100%">
+          <img class="giflab oculto" src="laboratorio-1-gif.gif" style="width:100%" alt="">
+          <div class="labo oculto"><img src="Boom.png" alt="" width="100%"></div>
+         <!--  <a class="Inicio" href="./imgs/Inicio.png"></a> -->
+          <!-- div class="area">⚠ Peligro ⚠</div> -->
+          <!--  <video class="video" src="./imgs/animacion lavoratorio.mp4" width="100%" autoplay></video>
+                <img lampara1 src="./imgs/lampara 1_Mesa de trabajo 1-01.png" alt="">
+                <img lampara2 src="./imgs/lampara 2_Mesa de trabajo 1-02.png" alt=""> -->
+          <!--  <img src="./imgs/fondo_laboratorio_Mesa de trabajo 1-03.png" style="width:100%"> -->
+          
+          <div class="title1">
+            <p class="uno">Max se encuentra en su laboratorio...</p>
+          </div>
+        </div>
+
+
+
+        <div class="mySlides fade">
+          <p class="numbertext">2 / 5</p>
+          <div class="bola"></div>
+          <img class="fondo2" src="fondo_cueva1.png" alt="" style="width:100%">
+          <div class="cueva oculto"><img src="fondo_cueva1.png" alt="" width="100%"></div>
+          <div class="title1">
+            <audio class="audiocue oculto">
+              <source src="Audio nave.mp3" type="">
+            </audio>
+            <p class="uno">Max se encuentra viajando en su maquina del tiempo hacia un lugar desconocido...</p>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <p class="numbertext">3 / 5</p>
+          <img class="globo" src="globo.png" alt="">
+          <img class="maxx oculto" src="personaje principal.png" alt="">
+          <div class="">
+            <div >
+              <img  class="max oculto" src="maxx-caminando.gif" alt="">
+            </div>
+          </div>
+          <div class="circulo oculto"></div>
+          <img class="ojos" src="ojos.png" alt="">
+          <img class="img1" src="fondo_cueva1.png" style="width:100%">
+          <div class="title1">
+            <p class="uno">Max se encuentra en un mundo paralelo nunca antes conocido...</p>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <p class="numbertext">4 / 5</p>
+          <div class="bola1"></div>
+          <img  class="max1 oculto" src="maxx-caminando.gif" alt="">
+          <img class="maxx1 oculto" src="personaje principal.png" alt="">
+          <img class="fondo3" src="FONDO_FUTURO.gif" style="width:100%">
+          <audio class="audioft oculto">
+            <source src="fondo futuro sonido 4.mp3" type="">
+          </audio>
+          <div class="text3"></div>
+          <div class="title1">
+            <p class="uno">Max llega al futuro un poco extrañado, ve una casa futuristica y camina hacia ella. donde se encontrara con Lena </p>
+            <h2></h2>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <p class="numbertext">5 / 5</p>
+          <img class="." src="Futuro dialogo.png" style="width:100%">
+          <div class="text3"></div>
+          <div class="title1">
+            <p class="uno">Max y Lena se encuentran dialogando sobres las problematicas y consecuencias, que se han
+              ocacionado tras la mala manipulación de los productos químicos de limpieza tanto en la salud como en el
+              medio ambiente.</p>
+            
+          </div>
+        </div>
+
+
+        <div class="mySlides fade">
+          <p class="butoncapitulo">capitulo 2</p>
+          <p class="numbertext">1 / 6</p>
+          <div class="bola2"></div>
+          <img class="fondo4" src="Fondo_Pasado_Gif.gif" style="width:100%">
+          <img class="fon oculto" src="Fondo_Pasado_Gif.gif" style="width:100%" alt="">
+          <img class="maxrg oculto" src="personaje principal.png" alt="">
+          <audio class="audiofut oculto">
+            <source src="Audio Pasado.mp3" type="">
+          </audio>
+          <audio class="audiopas oculto">
+            <source src="Audio Ambiente Pasado.mp3" type="">
+          </audio>
+          <div class="title1">
+            <p class="uno">Maxx llega al pasado con el proposito de cambiar todo para bien.</p>
+            
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <p class="numbertext">2 / 6</p>
+          <img class="." src="Escena pasado_Mesa de trabajo 1-01.png" style="width:100%">
+          <div class="text3"></div>
+          <div class="title1">
+            <p class="uno">Max se encuentra frente a un castillo, decidido procede a entrar</p>
+          
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <p class="numbertext">3 / 6</p>
+          <div class="bola4"></div>
+          <img class="fondo6" src="Fondo 5  castillo animar.gif" style="width:100%">
+          <img class="fondocas oculto" src="Fondo 5  castillo animar.gif" style="width:100%">
+          <div class="dialogo oculto">
+            <p>Max: (mientras habla con amadeo del pasado) ¡Escuche, debe tener cuidado con los productos químicos de limpieza! Si no los manipulan correctamente, pueden tener consecuencias graves. </p>
+            <p>Amadeo: (confundido) ¿De qué estás hablando? Nunca hemos tenido problemas con nuestros limpiadores. </p>
+            <p>Max: (explicando) Bueno, en mi mundo, el mal manejo de los químicos de limpieza llevó a una catástrofe mundial. No quiero que eso suceda aquí también. 
+
+              Amadeo: (convencido) Lo entiendo. Tomaré tus consejos en serio. </p>
+        </div>
+          <img class="casdia oculto" src="Fondo 5 dialogo.png" style="width:100%">
+          <div class="text4"></div>
+          <div class="title1">
+            <p class="uno">Max se encuentra con el rey a quien saluda de manera muy educada, por otro lado aunque un poco extrañado de la misma el rey le responde el saludo.</p>
+           
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <p class="numbertext">4 / 6</p>
+          <img class="." src="Escena pasado 2_Mesa de trabajo 1-02.png" style="width:100%">
+          <div class="text3"></div>
+          <div class="title1">
+            <p class="uno">Despues de pasar unos dias enseñandole muchas cosas al rey, Max decide regresar a su mundo un poco cansado pero satisfecho por todo lo realizado durante su viaje</p>
+           
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <p class="numbertext">5 / 6</p>
+          <div class="bola3"></div>
+          <img class="fondo5" src="fondo_cueva1.png" style="width:100%">
+          <img class="maxfeliz oculto" src="maxx feliz fin.gif" style="width:100%">
+          <div class="text4"></div>
+          <div class="title1">
+            <p class="uno"> ¡Finalmente estoy de regreso en mi mundo! Espero haber hecho lo correcto. </p>
+            <audio class="audiofin oculto">
+              <source src="Reflexion maxx.mp3" type="">
+            </audio>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <p class="numbertext">6 / 6</p>
+          <div class="bola5"></div>
+          <img class="fondo6" src="final.jpg" style="width:100%">
+          <div class="text4"></div>
+          <div class="title1">
+            <p class="uno">Tomar acciones en el presente, indagar en indagar en nuestro pasado para cuidar nuestro futuro</p>
+            <audio class="audiofinn oculto">
+              <source src="audio finn.mp3" type="">
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div class="botones" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+  </div>
+  <script src="./cómic.js"></script>
+</body>
+
+</html>

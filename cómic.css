@@ -1,0 +1,788 @@
+body{
+    background-color: #082dff7a;
+   }
+  
+  * {box-sizing:border-box}
+  
+   .sonido{
+    position: absolute;
+    top: 1.5%;
+    left: 75%;
+  }
+  
+  
+  .btn-inicio{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 62%;
+    
+  }
+  
+  .barra{
+  background-color: #008cff;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  }
+  
+  /*
+  .title1{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    bottom: -65px;
+    background-color: aqua;
+    
+  } */
+  
+  .img{
+   display: none;
+  }
+  .globo{
+    position: absolute;
+    margin-top: 16%;
+    margin-left: 28%;
+    width: 8%;
+  }
+  
+  .uno{
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* .max{
+    background-image: url(imgs/Ciclo\ de\ caminado_maxx1.png);
+    position: absolute;
+    top: 16rem;
+    left: 12.2rem;
+    height: 13.5rem;
+    width:10rem;
+    animation: caminado 3s steps(4) forwards;
+  }  */
+  
+  .max{
+   /*  background-image: url(imgs/Ciclo\ de\ caminado_maxx1.png);
+    background-size: cover; 
+    background-position: center;  */
+    position: absolute;
+    top: 35%;
+    left: 22%;
+    /* height: 38%; */
+    width:18%;
+    
+   animation: caminado 2s linear forwards;
+  } 
+  
+  @keyframes caminado {
+    from{
+      background-position: 0 0;
+    }
+    to{
+      background-position: 800px;
+      transform: translateX(300%);  
+    }
+  }
+
+  .max1{
+     position: absolute;
+     top: 55%;
+     left: -6%;
+     width:15%;
+     
+    animation: caminado 2s linear forwards;
+   } 
+   
+   @keyframes caminado {
+     from{
+       background-position: 0 0;
+     }
+     to{
+       background-position: 800px;
+       transform: translateX(300%);  
+     }
+   }
+   
+  
+  /* 
+  @media screen and (max-width: 500px) {
+    .max {
+      position: absolute;
+      top: 46.5%;
+      left: 22%;
+      height: 30%;
+      width:10%;
+      animation: caminado 3s steps(4) forwards;
+    }
+    
+  } 
+  
+  @media screen and (max-width: 800px) {
+    .max {
+      position: absolute;
+      top: 46.5%;
+      left: 22%;
+      
+      width:15.5%;
+      animation: caminado 3s steps(4) forwards;
+    }
+    
+  }  */
+  /* .max_animated{
+    animation: caminado 1s steps(6) forwards;
+  }
+   */
+  
+  .maxx{
+    position: absolute;
+    margin-top: 26%;
+    margin-left: 22%;
+    width: 6.5%;
+  
+  }
+  .maxx1{
+    position: absolute;
+    margin-top: 32%;
+    margin-left: 45%;
+    width: 6.5%;
+  
+  }
+
+  
+  .oculto{
+    display: none;
+  }
+  
+  /* .max{
+    background-image: url(imgs/Ciclo\ de\ caminado_maxx1.png);
+    background-size: cover; 
+    background-position: center; 
+    position: absolute;
+    top: 46.5%;
+    left: 22%;
+    height: 38%;
+    width:17%;
+    animation: caminado 3s steps(4) forwards;
+  } 
+   */
+  
+  /* @media (max-width: 600px) {
+    .max {
+      position: absolute;
+      top: 46.5%;
+      left: 22%;
+      height: 30%;
+      width:20%;
+      animation: caminado 3s steps(4) forwards;
+    }
+    
+  } */
+  
+  /* .max_animated{
+    animation: caminado 1s steps(6) forwards;
+  }
+   */
+  /* @keyframes caminado {
+    from{
+      background-position: 0 0;
+    }
+    to{
+      background-position: 800px;  
+      transform: translateX(400%);  
+    }
+  }
+  
+  @keyframes moverMax {
+    from{
+      transform: translateX(0%); 
+    }
+    to{
+      transform: translateX(400%);   
+    }
+  } */
+  
+  .ojos{
+    position: absolute;
+    margin-top: 28%;
+    margin-left: 24%;
+    animation-play-state: paused;
+    width: 2%;
+    cursor: pointer;
+  }
+  
+  .ojos :hover{
+    background-color: #1305a8;
+  }
+  
+  .Inicio{
+    position: absolute;
+    top: 0px;
+    width: 50px;
+  }
+  
+  
+  .lampara{
+      right: 0;
+      position: absolute;
+      /* margin-top: 65px; */
+      /* margin-left: 175px; */
+      width: 64%;
+      left: 0px;
+      margin: auto;
+      top: 11%;
+  }
+  
+  /*.mi-elemento {
+    position: absolute;
+     width: 100%;
+    height: 100%;
+    
+  } 
+  
+  } */
+  
+  .opacidad-cero {
+    opacity: 0;
+  }
+  .boton{
+    width: 4%;
+    height: 7%;
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    margin: auto;
+    opacity: 0.8;
+  }
+  
+  .botonrojo{
+    cursor: pointer;
+  }
+  .botonverde{
+    cursor: pointer;
+  }
+  
+  @media screen {
+    
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    position: relative;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    position: absolute;
+    background-color: #ffffff;
+    top: -9.5%;
+    left: 2%;
+    border-radius: 50px;
+    width: 5%;
+    height: 5%;
+    text-align: center; /* Centra el texto horizontalmente */
+    padding-top: 0.5%;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #1500ff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #ff0000;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  .botones{
+    margin-top: 8%;
+   margin-left: 1%;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  .title1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+      position: absolute;
+      color: rgb(0, 0, 0);
+      width: 100%;
+      height: 20%;
+      bottom: -15%;
+      padding: 2%;
+      background-color: rgb(0, 255, 255);
+  }
+  
+  p{
+  font-size: 90%;
+  }
+  
+  .uno {
+      animation-duration: 3s;
+      animation-name: slidein;
+    }
+    @keyframes slidein{
+      from{
+        margin-left: 100%;
+        width: 300%;
+      }
+      
+      to{
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+    
+  
+  
+    .ojos:hover {
+      opacity: 0; /* Inicialmente transparente */
+      animation: opacityojos 1.5s forwards; /* Animación de opacidad */
+      filter: brightness(2);
+      transform: scale(1.5);
+    }
+    
+    @keyframes opacityojos {
+      from {
+        opacity: 0; /* Comienza desde la opacidad 0 */
+      }
+      to {
+        opacity: 1; /* Termina con opacidad 1 */
+      }
+    }
+  
+    .circulo {
+      position: absolute;
+      top: 60%;
+      left: 18%;
+      width: 7%;
+      height: 12%;
+      border: 5px solid chartreuse;
+      border-radius: 50%; /* Hace que el div tenga forma de círculo */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para un efecto más llamativo */
+      animation: pulsar 1s infinite alternate; /* Animación de pulsar */
+    }
+    .circulo:hover{
+      filter: brightness(2);
+      
+    }
+  
+    
+    .bola{
+      position: absolute;
+      top: 60%;
+      left: 18%;
+      width: 7%;
+      height: 12%;
+      border: 5px solid chartreuse;
+      border-radius: 50%; /* Hace que el div tenga forma de círculo */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para un efecto más llamativo */
+      animation: pulsar 1s infinite alternate; /* Animación de pulsar */
+    }
+  
+    .bola1{
+      position: absolute;
+      top: 60%;
+      left: 18%;
+      width: 7%;
+      height: 12%;
+      border: 5px solid chartreuse;
+      border-radius: 50%; /* Hace que el div tenga forma de círculo */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para un efecto más llamativo */
+      animation: pulsar 1s infinite alternate; /* Animación de pulsar */
+    }
+    .bola2{
+      position: absolute;
+      top: 60%;
+      left: 18%;
+      width: 7%;
+      height: 12%;
+      border: 5px solid chartreuse;
+      border-radius: 50%; /* Hace que el div tenga forma de círculo */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para un efecto más llamativo */
+      animation: pulsar 1s infinite alternate; /* Animación de pulsar */
+    }
+    .bola3{
+      position: absolute;
+      top: 60%;
+      left: 18%;
+      width: 7%;
+      height: 12%;
+      border: 5px solid chartreuse;
+      border-radius: 50%; /* Hace que el div tenga forma de círculo */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para un efecto más llamativo */
+      animation: pulsar 1s infinite alternate; /* Animación de pulsar */
+    }
+  
+    .bola4{
+      position: absolute;
+      top: 60%;
+      left: 18%;
+      width: 7%;
+      height: 12%;
+      border: 5px solid chartreuse;
+      border-radius: 50%; /* Hace que el div tenga forma de círculo */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para un efecto más llamativo */
+      animation: pulsar 1s infinite alternate; /* Animación de pulsar */
+    }
+
+    .bola5{
+        position: absolute;
+        top: 60%;
+        left: 18%;
+        width: 7%;
+        height: 12%;
+        border: 5px solid chartreuse;
+        border-radius: 50%; /* Hace que el div tenga forma de círculo */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para un efecto más llamativo */
+        animation: pulsar 1s infinite alternate; /* Animación de pulsar */
+      }
+  
+    .circulo1:hover{
+      filter: brightness(2);
+      
+    }
+    .bola:hover{
+      filter: brightness(2);
+      
+    }
+    .bola1:hover{
+      filter: brightness(2);
+      
+    }
+    .bola2:hover{
+      filter: brightness(2);
+      
+    }
+    .bola3:hover{
+      filter: brightness(2);
+      
+    }
+    .bola4:hover{
+      filter: brightness(2);
+      
+    }
+    .bola5:hover{
+        filter: brightness(2);
+        
+      }
+    
+    
+  
+    @keyframes pulsar {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.1);
+      }
+    }
+    .cambio{
+      position: absolute;
+      width: 5%;
+      height: 20%;
+      left: 15%;
+      top: 50%;
+  }
+  
+    .cambio:hover{
+      filter: brightness(2);
+    }
+  
+    /* .alerta {
+      position: absolute;
+      top: 2%;
+      left: 40%;
+      width: 40%;
+      height: 50%;
+      transform: translateX(-50%);
+      background-color: #ff9800;
+      color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      display: none;
+      animation: mostrarAlerta 0.5s ease-in-out forwards;
+    }
+    
+    .cerrar {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      cursor: pointer;
+    }
+  
+    .alert{
+      height: 6%;
+      position: absolute;
+      margin-top: 0.5%;
+      right: 1%;
+    }
+    
+    @keyframes mostrarAlerta {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    } */
+  
+    .alert{
+      position: absolute;
+      top: 1.5%;
+      right: 2%;
+    }
+  
+    .alerta {
+      position: absolute;
+      top: 22%;
+      bottom: 20%;
+      left: 15%;
+      width: 70%;
+      height: 50%;
+      background-color: rgba(0, 119, 255, 0.945); /* Color de fondo semi-transparente */
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      z-index: 1000; /* Valor alto para asegurar que esté por encima de los slides */
+      display: none; /* Ocultar inicialmente el elemento */
+    }
+    .cerrar {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    /* Ejemplo de media query para ajustar el tamaño del texto en pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+   
+   p{
+    font-size: 70%;
+   }
+   li{
+    font-size: 80%;
+   }
+   h1{
+    font-size: 120%;
+   }
+   h2{
+    font-size: 100%;
+   }
+   h3{
+    font-size: 120%;
+   }
+   h5{
+    font-size: 100%;
+   }
+   .barra{
+    height: 40px;
+    }
+    .dot {
+        height: 18px;
+        width: 18px;
+        margin: 0 1px;
+      }
+      .sonido{
+        top: 2.5%;
+      }
+      
+      .btn-inicio{
+        margin-top: 1.5%;
+    }
+    .alert{
+        margin-top: 0.5%;
+        right: 3%;
+    }
+    .numbertext {
+        top: -10.3%;
+        left: 2%;
+        width: 6%;
+        height: 6%;
+        padding-top: 0.7%;
+      }
+        
+  }
+  
+  /* Ejemplo de media query para ajustar el tamaño del texto en pantallas pequeñas */
+  @media screen and (max-width: 480px) {
+  
+    p{
+      font-size: 50%;
+     }
+     li{
+        font-size: 60%;
+       }
+     h1{
+      font-size: 90%;
+     }
+     h2{
+      font-size: 80%;
+     }
+     h3{
+      font-size: 80%;
+     }
+     h5{
+      font-size: 80%;
+     }
+     .barra{
+        height: 30px;
+        }
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 0.5px;
+          }
+          .sonido{
+            top: 2%;
+          }
+          
+          .btn-inicio{
+            margin-top: 1.5%;
+        }
+        .alert{
+            margin-top: 0.8%;
+            right: 3%;
+        }
+          .numbertext {
+            top: -12%;
+            left: 2%;
+            width: 6.5%;
+            height: 6.5%;
+          }
+            
+            
+  }
+
+  .dialogo {
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    left: 5%;
+    top: 10%;
+    padding: 10px;
+    width: 90%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dialogo p {
+    margin: 5px 0;
+}
+
+.dialogo.oculto p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.dialogo.oculto p:nth-child(odd) {
+    transition-delay: 0.2s;
+}
+
+.dialogo.oculto p:nth-child(even) {
+    transition-delay: 0.4s;
+}
+
+.dialogo:hover .oculto p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.button{
+    margin-top: 1%;
+    margin-left: 15%;
+    height: 60%;
+}
+.contenedor {
+    position: absolute;
+    background-color: #f0f0f0;
+    width: 200px; /* Ancho del contenedor */
+    height: 100px; /* Altura del contenedor */
+}
+  
+  .butoncapitulo {
+    position: absolute;
+    top: 10px; /* Distancia desde la parte superior */
+    left: 20px; /* Distancia desde la parte derecha */
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .butoncapitulo:hover {
+    background-color: #005085;
+  }
+  
